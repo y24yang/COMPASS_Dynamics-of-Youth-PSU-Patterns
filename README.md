@@ -13,13 +13,16 @@ In this project, we explore the dynamic transitions of polysubstance use (PSU) p
 This repository documents the project aims, technologies used, features, and future work. 
 
 ## Technologies Used
-- Missing data analysis and multiple imputation
-- LASSO regression 
-- Latent Markov Model (LMM),  the [LMest](https://www.jstatsoft.org/article/view/v081i04) package for generalized LMMs
-- Running environment: RStudio Server 1.4 was set up on Ubuntu 18.04 with a 64 GiB RAM virtual machine running on Microsoft Azure
+In this project, data analysis was performed using the R language, open-source software to compute statistics and perform graphics. In particular, the following key packages were employed.
+- [FactoMineR](https://cran.r-project.org/web/packages/FactoMineR/FactoMineR.pdf), [missMDA](https://cran.r-project.org/web/packages/missMDA/missMDA.pdf), and [naniar](https://cran.r-project.org/web/packages/naniar/naniar.pdf) packages for missing data analysis and visualization
+- Multiple imputation, [MICE](https://cran.r-project.org/web/packages/mice/mice.pdf) package
+- LASSO (L1 regularization), [glmnetcr](https://cran.r-project.org/web/packages/glmnetcr/glmnetcr.pdf) package for ordinal response
+- Latent Markov Model (LMM), [LMest](https://cran.r-project.org/web/packages/LMest/LMest.pdf) package for generalized LMMs
+- Computing Environment: RStudio Server 1.4 was set up on Ubuntu 18.04 with a 64 GiB RAM virtual machine running on Microsoft Azure
 
 ## Features
 - Data cleansing 
+- Missing data analysis
 - Multiple imputation
 - Feature selection 
 - Dynamics modelling 
