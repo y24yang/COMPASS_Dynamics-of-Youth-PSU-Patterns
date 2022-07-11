@@ -15,14 +15,19 @@ This repository documents the project aims, technologies used, features, and fut
 ## Technologies Used
 - Missing data analysis and multiple imputation
 - LASSO regression 
-- Latent Markov Model (LMM)
+- Latent Markov Model (LMM),  the [LMest](https://www.jstatsoft.org/article/view/v081i04) package for generalized LMMs
+- Running environment: RStudio Server 1.4 was set up on Ubuntu 18.04 with a 64 GiB RAM virtual machine running on Microsoft Azure
 
 ## Features
+- Data cleansing 
+- Multiple imputation
+- Feature selection 
+- Dynamics modelling 
 
 ## Future Work
 - Explore age difference and other characteristic differences in the dynamic transition of use patterns among youth by conducting a stratified analysis using the LMM method
 - Add mental health assessment and data elements that reflect school environments, school health policies and practices to examine the dynamics of PSU over a longer period
-- 
+- External validation
 
 ## Acknowledgements
 We acknowledge the receipt of the Applied Health Sciences (AHS) scholarship and Microsoft AI for Good grant. The COMPASS study has been supported by the Canadian Institutes of Health Research, Health Canada, the Canadian Centre on Substance Abuse, the SickKids Foundation, and the Ministère de la Santé et des Services sociaux of the province of Québec. We also acknowledge the assistance received from Professor Fulvia Pennoni from the Department of Statistics and Quantitative Methods at the University of Milano-Bicocca and Francesco Bartolucci, Professor of Statistics from the Department of Economics at the University of Perugia for their expertise on longitudinal and panel data analysis and latent variable models.
