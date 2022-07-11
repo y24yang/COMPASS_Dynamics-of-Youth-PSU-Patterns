@@ -25,7 +25,7 @@ This repository documents the project aims, technologies used, features, and fut
 - 
 
 ## Acknowledgements
-We acknowledge the receipt of the Applied Health Sciences (AHS) scholarship, Microsoft AI for Good grant, the Canadian Institutes of Health Research, Health Canada, the Canadian Centre on Substance Abuse, the SickKids Foundation, and the Ministère de la Santé et des Services sociaux of the province of Québec. We also acknowledge the assistance received from Professor Fulvia Pennoni from the Department of Statistics and Quantitative Methods at the University of Milano-Bicocca and Francesco Bartolucci, Professor of Statistics from the Department of Economics at the University of Perugia for their expertise on longitudinal and panel data analysis and latent variable models.
+We acknowledge the receipt of the Applied Health Sciences (AHS) scholarship and Microsoft AI for Good grant. The COMPASS study has been supported by the Canadian Institutes of Health Research, Health Canada, the Canadian Centre on Substance Abuse, the SickKids Foundation, and the Ministère de la Santé et des Services sociaux of the province of Québec. We also acknowledge the assistance received from Professor Fulvia Pennoni from the Department of Statistics and Quantitative Methods at the University of Milano-Bicocca and Francesco Bartolucci, Professor of Statistics from the Department of Economics at the University of Perugia for their expertise on longitudinal and panel data analysis and latent variable models.
 
 ## Contact
-Created by [Yang Yang](y24yang@uwaterloo.ca) - feel free to contact me!
+Created by [Yang (Rena) Yang](y24yang@uwaterloo.ca) - feel free to contact me!
