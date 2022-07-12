@@ -1,6 +1,6 @@
-###############
+#################
 ### Data Prep ###
-###############
+#################
 # Loading data
 df = read.csv(file.choose())
 
@@ -55,9 +55,9 @@ df$tar4[df$AOFTMJA2 == 9] <- 2
 
 # Similar procedures for other covariates that need to combine original categories, e.g., weekly allowance
 
-#########################
+#############################
 ### Missing Data Analysis ###
-#########################
+#############################
 # Loading required libraries
 library(VIM)
 library(FactoMineR)
@@ -85,9 +85,9 @@ gg_miss_upset(dfNMV, nsets = n_var_miss(dfNMV)) # number of missing values for e
 matrixplot(dfNMV, sortby = 2) # matrix plot
 vis_miss(dfNMV, sort_miss = TRUE, warn_large_data = FALSE) # ggplot of the missingness inside a dataframe
 
-######################
+###########################
 ### Multiple Imputation ###
-######################
+###########################
 # Loading the library
 library("mice")
 
@@ -112,9 +112,9 @@ pool_mean <- with(impdat, by(impdat, .imp, function(x) c(mean(x$cov1),sd(x$cov1)
 fit.t.test <- with(data=impMice, exp=lm(tar1+tar2+tar3+tar4 ~ cov1+cov2+cov3+...)) # conduct an independent t-test via lm in each imputed dataset
 t.test.estimates <- pool(fit.t.test)
 
-#######################
+########################
 ### LASSO Regression ###
-#######################
+########################
 # Loading required libraries
 library(data.table)
 library(ggplot2)       # plotting
@@ -171,9 +171,9 @@ ggplot(data=to_plot_r,                       # plot coefficients
        facet_wrap(~ model) + guides(fill=FALSE)
 
 
-######################
+#########################
 ### Dynamic Modelling ###
-######################
+#########################
 # Converting df from wide to long format
 df_long <- reshape(df_wide, idvar = "ID", varying = list(2:4, 5:7, 8:10, 11:13, 14:16, 17:19, 20:22, 23:25, 26:28, 29:31, 32:34, 35:37, 38:40, 41:43, 44:46, 47:49, 50:52, 53:55, 56:58, 59:61, 62:64, 65:67, 68:70, 71:73, 74:76, 77:79, 80:82, 83:85, 86:88, 89:91, 92:94, 95:97, 98:100, 101:103, 104:106, 107:109, 110:112, 113:115), timevar="Time", v.names = c("Cigarette", "eCigarette", "Alcohol", "Marijuana", "HouseholdIncome", "Urbanity", "TotalPointsInterest", "DrinkingPlaces", "DrugStores", "LiquorStores", "TobaccoStores", "Province", "Grade", "Sex", "Race", "GetMoney", "TransportationToSchool", "PAfriends", "Breakfast", "SmokingFriends", "SupportQuitTobacco", "SupportQuitDrugAlcohol", "MathMarks", "EnglishMarks", "LikedEdu", "WillingEdu", "SkipClass", "BMI_Category", "SchoolConnectedness", "TotalDailySedentary", "SedentaryTime", "PAtime", "PA_level", "FLOURISH", "GAD7", "CESD", "DERS", "GambleOnline"), direction = "long")
 df_long <- df_long[order(df_long$ID, df_long$Time), ]
